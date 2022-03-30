@@ -67,5 +67,5 @@ def name_soter(names):
         if len(item) > 4:
             returned_list.append(item)
     return returned_list
-print(name_soter(name_list))
+# print(name_soter(name_list))
 
