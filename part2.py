@@ -7,4 +7,15 @@ def str_reverser():
         # print(string[character])
         reversed_string += string[character]
     return reversed_string
-print(str_reverser())
+# print(str_reverser())
+
+#2
+def capitilizer():
+    new_string = ''
+    string = input('Type a few words...')
+    words_list = string.split()
+    list_length = len(words_list)
+    for words in words_list:
+        new_string += words.capitalize() + ' '
+    return new_string
+print(capitilizer())
