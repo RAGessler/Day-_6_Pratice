@@ -58,3 +58,14 @@ def list_reverser(list):
         reversed_list.append(list[number -1])
     return reversed_list
 # print(list_reverser(ingredients))
+
+#6
+name_list = ['Rebecca', 'Sam', 'Dante', 'Bob', 'Monica', 'Brad']
+def name_soter(names):
+    returned_list = []
+    for item in names:
+        if len(item) > 4:
+            returned_list.append(item)
+    return returned_list
+print(name_soter(name_list))
+
