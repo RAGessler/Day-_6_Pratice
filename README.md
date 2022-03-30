@@ -16,3 +16,9 @@ problem 2
 1. make a user input for a string
 2. find out how many words are in that string.
 3. use a loop to capitalize each word of that string and place them back into a variable.
+
+Problem 3
+1. make a string input = a variable
+2. find the length of that variable
+3. ceate a for loop that reversed that varaible and uses it to create a new one (see problem 1)
+3. check to see if reversed variable = input variable
