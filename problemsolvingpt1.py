@@ -1,3 +1,4 @@
+#1
 def problem_one():
     string = 'Packers'
     answer = string[0] + string[6]
@@ -5,6 +6,7 @@ def problem_one():
 # problem1 = problem_one()
 # print(problem1)
 
+#2
 def peanutbutterjelltime():
     for number in range(0, 101):
         if number % 3 == 0 and number % 5 == 0:
@@ -15,9 +17,11 @@ def peanutbutterjelltime():
             print('Jelly')
         else:
             print(number)
-
 # peanutbutterjelltime()
 
+
+#3
+#this sucker was satisfying to figure out.
 def prob_three(word):
     final_result = ''
     counter = -1
@@ -26,9 +30,11 @@ def prob_three(word):
         counter_string = str(counter)
         final_result += letter + counter_string
     print(final_result)
-#this sucker was satisfying to figure out.
 # prob_three('Potato')
 
+
+#4
+french_fries = ['potato', 'fryer', 'oil', 'salt', 'ketchup', 'fry sauce']
 ingredients = ['bread', 'eggs', 'milk', 'cereal']
 def problem_four(ingredients):
     searching = input('What ingrediant are you looking for?')
@@ -41,7 +47,14 @@ def problem_four(ingredients):
             print('goodbye!')
         else:
             problem_four(ingredients)
+# problem_four(french_fries)
 
-problem_four(ingredients)
-
-
+#5
+def list_reverser(list):
+    reversed_list = []
+    list_length = len(list)
+    list_range = range(list_length, 0, -1)
+    for number in list_range:
+        reversed_list.append(list[number -1])
+    return reversed_list
+# print(list_reverser(ingredients))
