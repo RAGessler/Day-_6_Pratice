@@ -32,4 +32,21 @@ def palindrome_checker():
     else:
         print(f'{user_input} is not a palendrome')
         print(f'{user_input} reversed is {reversed_string}')
-palindrome_checker()
+# palindrome_checker()
+
+#bonus problem
+def bonus_problem():
+    string = input('What shall i compress for you?')
+    counter = 1
+    new_string = ''
+    string_length = len(string)-1
+    for index in range(string_length):
+        if string[index] == string[index+1]:
+            counter += 1
+        else:
+            new_string += str(counter) + string[index]
+            counter = 1
+    new_string += str(counter) + string[index]
+    return new_string
+print(bonus_problem())
+
